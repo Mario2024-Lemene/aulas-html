@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em Html</title>
+</head>
+<body>
+    <h1>Imagens dinamicas HTML5</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplemente aumente e diminua o tamanho do seu navegador</p>
+    <picture>                         
+        <!-- essa tag serve como se fosse uma condicao para imagem em cada tela, verifica se a largura da tela é menor que 750px entao coloca a imagem pequena -->
+        <source media="(max-width:750px )" srcset="img/pequeno.png" type="image/png"> 
+        <!-- Nessa imagem media so é colocada se a tela for maior que 750px e menor que 1050px  -->
+        <source media="(max-width:1050px )" srcset="img/medio.png" type="image/png">
+        <!-- essa imagem é a imagem que sera de padrao para o navegador caso ele seja de um tamanho enorme -->
+        <img src="img/grande.png" alt="imagem flexivel com um G">
+    </picture>
+    <h1>Reproduzindo Audio</h1>
+    <p>Como colocar um audio em html5, é mais facil do que eu esperava mas tou aqui</p>
+    <audio src="media/rapescudo.mp3.m4a" controls></audio>
+    <!-- para que os navegadores possam ler esse audios deves usar o formato MP3, WAN, OGG -->
+    <p>Essa é uma outra forma de colocar imagens como se fosse a tag &lt;picture&gt;</p>
+    <!-- auto carrega tudo e consider -->
+    <audio controls loop preload="metadata" autoplay>
+        <!-- essa parte ira trabalhar como se fosse uma condicao caso o navegador do cliente nao carregue nada disso ira para o ultimo paragrafo e fara com que ele fique um pouco encuralado tendo que baixar o audio -->
+        <source src="media/musica.mp3" type="audio/mpeg">
+        <source src="media/musica.ogg" type="audio/ogg">
+        <source src="media/musica.wav" type="audio/wav">
+        <p>Seu navegador nao suporta audio <a href="media/musica.mp3">Clique aqui para baixar em formato mp3</a></p>
+    </audio>
+</body>
+</html>

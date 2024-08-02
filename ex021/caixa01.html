@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixa</title>
+    <style>
+        h1{
+            background-color: lightgoldenrodyellow;
+            /* esses dois elemntos são o que se chama box-size */
+        
+            height: 300px;
+            width:300px;
+            border: 10px dashed darkslategray;
+            /* sempre tenta colocar nessa ordem para o codigo ficar mais lindolo */
+            padding: 10px;
+            /* margem do teu h1 */
+            margin: 20px auto 40px auto;
+            /* o outline funciona como uma borda mas ele esta entre a borda e a margin */
+            /* pesso estilo e cor<-essa é a ordem da forma abreviada */
+            outline: 10px solid red;
+        }
+        a{ 
+            display: block;
+            border: 10px solid pink;
+            padding: 10px 10px 10px 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="../BOTAO.HTML">links são exemplos de inline-level</a>. Vamos ver como tudo isso funciona</p>
+    
+</body>
+</html>
