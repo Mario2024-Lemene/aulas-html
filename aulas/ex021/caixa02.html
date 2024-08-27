@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: monospace;
+            background-color: lightslategray;
+            margin: 0px;
+        }
+        h1{
+            text-shadow: 1px -1px 1px rgba(0, 0, 0, 0.459);
+        }
+        nav {
+            background-color: darkgray;
+            padding: 5px;
+            box-shadow:  5px 3px 7px 1px rgba(0, 0, 0, 0.479);
+        }
+
+        nav>a {
+            text-decoration: line-through;
+            color: white;
+            font-weight: 900;
+            margin-right: 30px;
+        }
+        nav>a:hover{
+            text-decoration: underline;
+            color: blue;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            /* a ordem disso e da esquerda para direita */
+            border-radius: 10px 2px 4px 5px;
+            
+        }
+
+        article {
+            background-color: lightslategray;
+            padding: 10px;
+        }
+
+        article>aside {
+            background-color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        footer {
+            background-color: white;
+            color: black;
+            padding: 5px;
+        }
+        footer>p{
+            margin: 0px;
+        }
+        div#bola{
+            width: 100px;
+            background-color: white;
+            height: 100px;
+            margin: 25px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu Site de Vendas</h1>
+        <nav>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+        </nav>
+    </header>
+    <main>
+        <section class="assuntos">
+
+        </section>
+        <section class="notica">
+            <article>
+                <h2>Notica</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis dolorum itaque, vero sequi
+                    deserunt beatae. Quam similique provident vitae voluptatem optio deserunt voluptates ad debitis
+                    perspiciatis. Possimus ab cumque culpa.</p>
+                <aside>
+                    Artigo Escrito por Mario Lemene
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Este e um site feito por Mario</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+
+</html>

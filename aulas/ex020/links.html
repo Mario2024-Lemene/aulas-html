@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        /* marcacao nativa dos links */
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: 800;
+        }
+
+        /* marcacao de links ja visitados */
+        a:visited {
+            color: green;
+        }
+
+        /* quando passares o mouse sobre o link ira ficar do jeito que foi atribuido abaixo */
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active {
+            color: blue;
+        }
+
+
+        .animacao::before {
+            content: "<";
+            font-weight: 100;
+            color: darkgray;
+        }
+
+        .animacao::after {
+            content: ">";
+            font-weight: 100;
+            color: darkgray;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="../ex020/pseudo-classe.html" target="_blank" rel="next">Pagina de Pseudo-Classe</a></li>
+        <li><a  href="../ex020/hover.html" target="_blank" rel="next" class="animacao">Pagina de hover</a></li>
+        <li><a href="../BOTAO.HTML" target="_blank" rel="next">Pagina de botao</a></li>
+    </ul>
+</body>
+
+</html>

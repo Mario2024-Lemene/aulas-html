@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula sobre video</title>
+</head>
+<!-- os documentos desse exercicios foram eliminados pois eram muito pesados para o github -->
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video esta hospedado localmente</p>
+    <!-- essa é a forma nao responsavel de colocar um video -->
+    <!-- <video src="midia/video1.mp4" width="300" controls></video> -->
+     <p></p>
+     <!-- essa é a forma de colocar um video responvacel-->
+      <!-- a tag poster contem uma imagem que sera como capara para o video que sera colocado no site -->
+      <video width="300px" autoplay loop controls poster="img/image.png">
+        <!-- essa ordem tem um significado caso esses video nao sejam copativeis num navegador e ajuda para varios usuarios serem felizes -->
+        <source src="midia/video1.mp4" type="video/mp4">
+        <source src="midia/video1_a.ogv" type="video/ogv">
+        <p>O seu navegador nao suporta o formato do video colocado <a href="midia/video1.mp4">clica aqui para baixar o video</a></p>
+      </video>
+      <h1>Inserindo videos de forma incorporada</h1>
+      <p>Este é um video do Youtube</p>
+      <iframe width="300px" height="300px" src="https://www.youtube.com/embed/6iw6GmoX3Lc?si=LTl0MKMvCvLTXJq3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

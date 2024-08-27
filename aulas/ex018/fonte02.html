@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: "Fonte1";
+            src: url(fontes/Dilemma\ Trial.otf) format(opentype), url(fontes/Dilemma\ Trial.ttf) format(truetype);
+            /* colocou-se essas duas formas pois nem todo navegador é compativel com otf ou com ttf */
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: n ;
+            src: url();
+        }
+        @font-face {
+            font-family: "fonte2";
+            src: url(fontes/South\ Catalonia.otf) format(opentype);
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: 'fonte2', Times, serif;
+            font-size: 3em;
+        }
+
+        p {
+            font-family: "Fonte1", 'Times New Roman', Times, serif;
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: "Robot";
+            src: url(roboto/Roboto-Italic.ttf) format(truetype);
+            font-style: italic;
+            font-weight: normal
+            ;
+        }
+        .eu{
+            font-family: "Robot";
+        }
+                    /* tipos de formato(o que deve ficar em format)
+                *opentype (otf)
+                *truetype(ttf)
+                *embadded-opentype
+                *truetype-aat (Apple Advanced Typeografy)
+                *svg
+                Esses formatos serao mais compativeis dependendo do tipo de navegador que estiver usando
+            */
+    </style>
+</head>
+
+<body>
+    <h1>Titulo</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis nihil pariatur ipsa at necessitatibus, quisquam,
+        iste cum laudantium veritatis qui aliquid consequatur repellat praesentium error voluptatum suscipit amet fugiat
+        cupiditate.</p>
+    <!-- quando estiverees a ver fontes no site "daFont.com" verifiue se ecxistem todos os glifos para a nossa lingua materna -->
+     <p class="eu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quasi officiis minima cumque, earum quibusdam magni, beatae non, accusantium aut qui corrupti molestias. Nisi pariatur facere exercitationem aspernatur repudiandae dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, soluta consectetur. Non, nemo. Ipsam assumenda architecto dolor maiores laborum, voluptatem voluptates repudiandae accusantium excepturi amet similique dicta exercitationem quod unde!</p>
+</body>
+
+</html>
