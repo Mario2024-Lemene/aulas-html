@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 10px;
+           }
+        caption{
+            font-size: 1.5em;
+            padding-bottom: 10px;
+            font-weight: 900;
+        }
+        col.Tnome{
+            background-color: gray;
+        }
+        col.Tprofissao{
+            background-color: yellowgreen;
+        }
+    </style>
+    <title>Exercicio de Tabela</title>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+    <table>
+        <colgroup>
+            <col class="Tnome">
+            <col span="2" style="background-color: rebeccapurple;">
+            <col class="Tprofissao">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <thead>
+            <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Caludio</td>
+                <td>M</td>
+                <td>19</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Gustavo</td>
+                <td>M</td>
+                <td>43</td>
+                <td>Desenvolvedor</td>
+            </tr>
+            <tr>
+                <td>Alfredo</td>
+                <td>M</td>
+                <td>39</td>
+                <td>Administrador de Sistemas de Rede</td>
+            </tr>
+            <tr>
+                <td>Filepe</td>
+                <td>M</td>
+                <td>27</td>
+                <td>Youtuber</td>
+            </tr>
+            <tr>
+                <td>NilAgra</td>
+                <td>38</td>
+                <td>M</td>
+                <td>Comediante</td>
+            </tr>
+            <tr>
+                <td>Tatiana</td>
+                <td>24</td>
+                <td>F</td>
+                <td>Atris</td>
+            </tr>
+            <tr>
+                <td>Fernanda</td>
+                <td>29</td>
+                <td>F</td>
+                <td>Cantora</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
