@@ -4,16 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de Iframe</title>
+    <style>
+        /* as configurações feitas no CSS sempre são suberanas */
+        iframe{
+            height: 500px;
+            width: 500px;
+            border: 10px solid black;
+        }
+    </style>
 </head>
 <body>
     <h1>Testando o uso de um iframe</h1>
+    <!-- por padrão eles tem 30 0X150 -->
     <p>Acessando o site do
-            <iframe src="/desafios/d012/index.html" frameborder="0">desafio cordel</iframe> 
+            <iframe src="/desafios/d012/index.html" frameborder="0" height="500px" width="350px" scolling="no"><a href="https://github.com/Mario2024-Lemene/projecto-cordel">desafio cordel</a></iframe> 
         feito com ajuda do curso em video
      </p>
      <p>
         Acessando o site do 
-        <iframe src="/desafios/d010/d010.html" frameborder="0">desafio android</iframe>
+        <iframe src="/desafios/d010/d010.html" frameborder="0" height="500px" width="500px ">
+            <a href="https://github.com/Mario2024-Lemene/projecto-android">projecto android</a>
+            
+        </iframe>
         feito na aula de html e css no curso em video
      </p>
 </body>
