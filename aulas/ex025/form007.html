@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h1>Exemplo de Formulario</h1>
+    <form action="cadastro.php" method="get">
+        <P>
+            <label for="inEstado">Estado de Moz:</label>
+            <select name="Estado" id="inEstado">
+
+                <optgroup label="Regiao Sul">
+                    <option value="Maputo">Maputo</option>
+                    <option value="Inhambane">Inhambane</option>
+                    <option value="Gaza" selected>Gaza</option>
+                </optgroup>
+
+                <optgroup label="Regiao do Centro">
+                    <option value="Sofala">Sofala</option>
+                    <option value="Manica">Manica</option>
+                    <option value="Zambezia">Zambezia</option>
+                </optgroup>
+
+                <optgroup label="Regiao do Norte">
+                    <option value="Tete">Tete</option>
+                    <option value="Nampula">Nampula</option>
+                    <option value="Cabo_Delagado">Cabo Delagado</option>
+                    <option value="Niass">Niassa</option>
+                </optgroup>
+            </select>
+        </P>
+        <p>
+            <label for="inProfissao">Porfissao: </label>
+            <input type="text" name="profissao" id="inProfissao" list="listaProfissao">
+            <datalist id="listaProfissao">
+                <option value="adm">Administrador</option>
+                <option value="dev">Desenvolvedor</option>
+                <option value="prof">Professor</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="inMensagem">Mensagem: </label> <br>
+            <textarea name="mensagem" id="inMensagem" cols="10" rows="10" placeholder="Escreva o sua mensagem"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+
+</html>

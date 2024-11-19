@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Exemplo de Formulario</h1>
+    <!-- sempre escolha o metodo certo, GET suporta no maximo 3000 bytes o metodo POST possui uma capacidade de transferencia de mais de 3000bytes-->
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="inCor">Cor: </label>
+            <input type="color" name="cor" id="inCor" value="#ffffff">
+        </p>
+        <p>
+            <label for="inNivel">Nivel de Satisafção</label>
+            <input type="range" name="Nivel" id="inNivel" min="0" max="5" step="0.5" value="1">  
+        </p>
+        <p>
+            <label for="inFile">Foto de perfil: </label>
+            <input type="file" name="file" id="inFile">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
