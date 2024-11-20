@@ -1,0 +1,8 @@
+@charset "UTF_8";
+
+/* configurações do aparelho na vertical */
+
+body{
+    background-image:url("../img/cev-portrait.jpg");
+    background-position: center bottom;
+}
