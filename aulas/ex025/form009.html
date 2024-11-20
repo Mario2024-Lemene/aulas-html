@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="inNum1">Numero: </label>
+            <input type="range" name="num1" id="inNum1" min="0" max="5" step="0.1" oninput="outValor.innerHTML= Number(inNum1.value)">
+            <output id="outValor">2.5</output>
+        </p>
+      
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

@@ -12,15 +12,15 @@
     <form action="cadastro.php" method="get">
         <p>
             <label for="inNum1">Num 1:</label>
-            <input type="number" name="numero1" id="inNum1" required min="0">
+            <input type="number" name="numero1" id="inNum1" required min="0" oninput="outSoma.innerHTML= Number(inNum1.value) + Number(inNum2.value)">
         </p>
         <p>
             <label for="inNum2">Num 2:</label>
-            <input type="number" name="numero2" id="inNum2" required min="0">
+            <input type="number" name="numero2" id="inNum2" required min="0" oninput="outSoma.innerHTML= Number(inNum1.value) + Number(inNum2.value)">
         </p>
         <p>
             <label for="outSoma">Soma: </label>
-            <output name="soma" id="outSoma"></output>
+            <output name="soma" id="outSoma">0</output>
         </p>
         <p>
             <input type="submit" value="Enviar">
