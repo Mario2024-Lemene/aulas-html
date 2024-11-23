@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/* media para os demais dispositivos */
+
+/* Typical Device Breakpoint 
+----------------------------
+pequenas telas: ate 600px
+celulares : 600px ate 768px
+tablets : 768px ate 992px
+desktop: 992 ate 1200px
+grandes telas: maior que 1200px
+
+*/
+
+/* estilo para impressoras */
+@media print {
+    
+    body{
+        background-color: url(../img/back-print.jpg);/* na impressora não da para imprimir o seu background por isso não foi colocado */
+        font-family: 'Courier New', Courier, monospace;
+    }
+    main{
+        border: 1px solid black;
+    }
+    img#telefone{ display: none;}
+    img#tablet{display: none;}
+    img#impressora{display: block;}
+    img#computador{display: none;}
+    img#tv{display: none;}
+    body::after{
+        content: "Impresso atraves do site mario2024-lemene.io/aulas-html/aulas/ex026";
+    }
+}
+
+/* estilo para tablets */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        background-image: url(../img/back-tablet.jpg);
+    }
+    img#telefone{ display: none;}
+    img#tablet{display: block;}
+    img#impressora{display: none;}
+    img#computador{display: none;}
+    img#tv{display: none;}
+}
+
+/* estilo para desktops */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body{
+        background-image: url(../img/back-pc.jpg);
+    }
+    img#telefone{ display: none;}
+    img#tablet{display: none;}
+    img#impressora{display: none;}
+    img#computador{display: block;}
+    img#tv{display: none;}
+}
+
+/* estilo para telas maiores */
+@media screen and (min-width: 1200px){
+    body{
+        background-image: url(../img/back-tv.jpg);
+    }
+    img#telefone{ display: none;}
+    img#tablet{display: none;}
+    img#impressora{display: none;}
+    img#computador{display: none;}
+    img#tv{display: block;}
+}
