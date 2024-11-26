@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoint 
+----------------------------
+pequenas telas: ate 600px mobile first ja contem
+celulares : 600px ate 768px mobile first ja contem
+tablets : 768px ate 992px
+desktop: 992 ate 1200px
+grandes telas: maior que 1200px
+
+*/
+/* media para tablets */
+@media screen and (min-width:768px) {
+    span#burger{
+        display: none;
+    }
+
+    menu{
+        display: block;
+    }
+    
+    /* as propriedades que estao no estilo anterior irao continuar por isso nao sera necessario colocar*/
+    menu > ul> li {
+        display: inline-block;
+    }
+    main{
+        /* colocou-se essa largura pois sera o inicio da quebra */
+        width: 768px;
+    }
+}
+
+
+
