@@ -9,8 +9,8 @@ __criacao de tabela__
 
 Nome | Idade | Sexo
 ---|---|---|
-Dolvino | 18 anos | M
-Mario | 19 anos | M
+Dolvino | 19 anos | M
+Mario | 20 anos | M
 
 Fim da tabela
 
