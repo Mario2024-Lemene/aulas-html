@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* reset as configurações do css */
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+/* configuração do corpo*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;/*dado a confiugração padrão do tamanho*/
+    background-color: lightgray;
+    /*o corpo ira ocupar toda a tela, não muda nada visualmente */
+    width: 100vw;
+    height: 100vh;
+}
+/* configuração do cabeçalho */
+header{
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    display: flex;
+}
+header> h1{
+    /* essas configurações devem ser apagadas depois */
+    border: 5px dotted black;
+}
+header>nav{
+    border:5px dotted white ;
+}
+/* configuração do contéudo princiapl */
+main{
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow:6px 6px 20px -10px;;
+}
