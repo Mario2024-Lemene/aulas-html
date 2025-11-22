@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/* fazendo com que o nav tenha um flex do tipo coluna */
+header,header>nav {
+    flex-flow: column nowrap;
+}
+
+/* configuração do header */
+header>h1{
+    flex-basis: 50px;
+    text-align: center;
+}

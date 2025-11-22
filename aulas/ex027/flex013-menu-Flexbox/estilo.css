@@ -32,13 +32,15 @@ header {
 header>h1 {
     flex: 0 0 200px;
     /* o h1 não ira crescer nem diminuir o seu tamanho e ira ficar com 200px de largura para sempre */
-    border: 5px dotted black;
+    /* border: 5px dotted black; */
     /* essas configurações devem ser apagadas depois */
+    
+    text-shadow: 2px 3px 5px black;
 }
 
 /* configuração do nav, que será um flexbox dentro de outro flex ou seja container dentro de um container */
 header>nav {
-    border: 5px dotted white;
+    /* border: 5px dotted white; */
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
@@ -65,9 +67,8 @@ header>nav>a:hover {
 /* configuração do contéudo princiapl */
 main {
     background-color: white;
-    margin: 10px;
+    margin-top: 10px;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 6px 6px 20px -10px;
-    ;
 }
