@@ -1,39 +1,73 @@
 @charset "UTF-8";
+
 /* reset as configurações do css */
-*{
+* {
     margin: 0px;
-    padding:0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
 /* configuração do corpo*/
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;/*dado a confiugração padrão do tamanho*/
+    font-size: 1em;
+    /*dando a confiugração padrão do tamanho*/
     background-color: lightgray;
     /*o corpo ira ocupar toda a tela, não muda nada visualmente */
     width: 100vw;
     height: 100vh;
 }
+
 /* configuração do cabeçalho */
-header{
+header {
     background-color: gray;
     color: white;
     padding: 10px;
     display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    /*fara com que os dois itens fiquem em cada canto*/
 }
-header> h1{
-    /* essas configurações devem ser apagadas depois */
+
+header>h1 {
+    flex: 0 0 200px;
+    /* o h1 não ira crescer nem diminuir o seu tamanho e ira ficar com 200px de largura para sempre */
     border: 5px dotted black;
+    /* essas configurações devem ser apagadas depois */
 }
-header>nav{
-    border:5px dotted white ;
+
+/* configuração do nav, que será um flexbox dentro de outro flex ou seja container dentro de um container */
+header>nav {
+    border: 5px dotted white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
 }
+
+/* configuração dos links dentro do nav */
+header>nav>a {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    /* configuração da sua flexibilidade */
+}
+
+header>nav>a:hover {
+    background-color: white;
+    color: black;
+    transition: 2s;
+}
+
 /* configuração do contéudo princiapl */
-main{
+main {
     background-color: white;
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
-    box-shadow:6px 6px 20px -10px;;
+    box-shadow: 6px 6px 20px -10px;
+    ;
 }
