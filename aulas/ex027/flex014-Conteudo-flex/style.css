@@ -1,1 +1,51 @@
 @charset "UTF-8";
+
+/* reniciando todas as configurações da pagina*/
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: content-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font: 1em;
+    line-height: 1.5em;
+    height: 100vh;
+    background-color: var(--cor3);
+}
+
+/* variavel das cores em CSS */
+:root {
+    --cor0: rgba(216, 149, 67, 1);
+    --cor1: rgba(242, 225, 205, 1);
+    --cor2: rgba(140, 79, 57, 1);
+    --cor3: rgba(216, 153, 130, 1);
+    --cor4: rgb(203, 88, 77);
+}
+ /* configuração do texto  */
+ h1,h2,p{
+    text-align: justify;
+    margin-bottom: 10px;
+ }
+header {
+    padding: 20px;
+}
+
+section.flex-content {
+    background-color: var(--cor1);
+    padding: 10px;
+}
+
+/* configuração a ser apagada no final */
+section > article{
+    border: 5px solid red;
+}
+
+.media-text{
+    background-color: red;
+}
+
+.text-media{
+    background-color: black;
+}
